@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block static_section %}
+	{% if USE_ESI %}
+		<esi:include src="http://127.0.0.1:8000/static_section/"/>
+	{% else %}
+		{% include "static.html" %}
+	{% endif %}
+{% endblock %}
+
+{% block dynamic_section %}
+	{% if USE_ESI %}
+		<esi:include src="http://127.0.0.1:8000/dynamic_section/"/>
+	{% else %}
+		{% include "dynamic.html" %}
+	{% endif %}
+{% endblock %}

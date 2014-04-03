@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo varnishd -a :80 -T localhost:6082 -f /usr/local/etc/varnish/default.vcl -s malloc,512m

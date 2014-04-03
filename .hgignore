@@ -1,0 +1,18 @@
+syntax: glob
+venv/*
+reports/*
+media/cache
+media/file
+media/photo
+media/group
+media/thumb
+media/report
+static/CACHE
+coverage.xml
+.coverage
+*.orig
+*.pyc
+*.swp
+*.log
+*.db
+.DS_Store
